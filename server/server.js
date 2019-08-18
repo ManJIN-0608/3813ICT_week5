@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //Point static path to dist if you want use your own server to serve Angular webpage
-// app.use(express.static('http://localhost:4200'));
+app.use(express.static('http://localhost:4200'));
 
 var http = require('http').Server(app);
 let server = http.listen(3000, function () {
